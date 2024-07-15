@@ -1,0 +1,21 @@
+{
+  "exclude": ["node_modules", "dist"],
+  "extends": "astro/tsconfigs/strict",
+
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@api/*": ["src/pages/api/*"],
+      "@test/*": ["test/*"],
+      "@dist/*": ["dist/*"],
+      "@theme": ["src/theme"],
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@styles/*": ["src/styles/*"],
+      "@public/*": ["public/*"]
+    }
+  }
+}
